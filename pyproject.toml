@@ -1,0 +1,19 @@
+[project]
+name = "verification-layers"
+version = "0.1.0"
+description = "What each verification layer in a coding-agent loop costs and what it buys: configs, scripts and weekly results"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "slop-code-bench",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# The runner. Pinned to the fork's reviewer commit (Vertex provider + in-loop
+# reviewer), which is the last commit before the instrument files that now live
+# here; move the pin to SprocketLab/slop-code-bench once both land upstream.
+slop-code-bench = { git = "https://github.com/samarmstrong/slop-code-bench", rev = "65d76b2c81c0dc53b9db36a3b10bd33aab1c9d9e" }

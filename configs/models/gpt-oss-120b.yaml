@@ -1,0 +1,12 @@
+# OpenAI's open-weight gpt-oss-120b as Vertex AI serves it (model-as-a-service,
+# "openai/gpt-oss-120b-maas" on the OpenAI-compatible endpoint). Used here only
+# as a cross-family judge. Pricing is unverified: check Vertex's rate card.
+internal_name: gpt-oss-120b-maas
+provider: openai
+pricing:
+  input: 0.15
+  output: 0.60
+  cache_read: 0
+  cache_write: 0
+aliases:
+  - gpt-oss-120b-maas

@@ -1,0 +1,35 @@
+# Verification-layers instrument, arm D. Tests: write a pytest suite first and keep it green; no hand-run checks.
+# Same model, effort, agent version, environment and problems in every arm.
+# Problems: 20 of 36, random.Random(42).sample(sorted(catalog v1.0), 20).
+agent: claude_code_vl
+environment: docker-python3.12-uv
+prompt: vl-tests
+model:
+  provider: vertex
+  name: sonnet-5.5
+thinking: medium
+review:
+  enabled: false
+save_dir: outputs
+save_template: vl/d-tests/${model.name}_${thinking}/${now:%Y%m%dT%H%M}
+problems:
+  - cfgpipe
+  - circuit_eval
+  - code_search
+  - dag_execution
+  - database_migration
+  - dynamic_buffer
+  - dynamic_config_service_api
+  - eve_route_planner
+  - execution_server
+  - file_backup
+  - file_merger
+  - file_query_tool
+  - forge
+  - log_query
+  - metric_transform_lang
+  - migrate_configs
+  - rejector
+  - textdrop
+  - trajectory_api
+  - xjq
