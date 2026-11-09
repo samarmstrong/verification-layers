@@ -48,13 +48,16 @@ for arm in "${arms[@]}"; do
   table_args+=("$label=$run_dir")
 done
 
-# Cross-family judge (Gemini 4 Argon) on each problem's final checkpoint.
+# Cross-family judge (Gemini 3.8 Flash) on each problem's final checkpoint. One judge from
+# another family is enough to show the reviewer's verdict is not Claude-specific; Argon
+# was dropped on 2026-11-09 for cost. Add a second family with:
+#   scripts/vl_cross_judge.py ... --judge gpt-oss --checkpoints all --max-usd 5
 run_dirs=()
 for arm in "${arms[@]}"; do
   [[ -d "outputs/vl/$arm/${model}_medium/$stamp" ]] && run_dirs+=("outputs/vl/$arm/${model}_medium/$stamp")
 done
-uv run python scripts/vl_cross_judge.py "${run_dirs[@]}" --judge gemini --max-calls 120 \
-  --max-usd 35 --workers 4 >"$logs/judge-gemini.log" 2>&1 || status=1
+uv run python scripts/vl_cross_judge.py "${run_dirs[@]}" --judge gemini-flash --max-calls 120 \
+  --max-usd 10 --workers 4 >"$logs/judge-gemini-flash.log" 2>&1 || status=1
 
 uv run python scripts/vl_table.py "${table_args[@]}" --price-model "$model" \
   --no-tests-quality D --csv "outputs/vl/seed-$stamp.csv" \

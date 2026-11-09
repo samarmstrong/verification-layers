@@ -82,7 +82,7 @@ To publish a seed, copy the `.md`, `.csv` and logs into `results/seed-N/` and at
 `outputs/vl/{a-plain,b-conveyor,c-review,d-tests}` as a `tar.zst` release asset.
 
 The pieces can also run alone: `scripts/vl_shadow_review.py <run_dir>`,
-`scripts/vl_cross_judge.py <run_dirs...> --judge gemini --max-usd N`, and
+`scripts/vl_cross_judge.py <run_dirs...> --judge gemini-flash --max-usd N`, and
 `scripts/vl_table.py A=<run_dir> B=<run_dir> C=<run_dir> D=<run_dir> --price-model
 sonnet-5.5 --no-tests-quality D`, which prints per-arm rows and paired deltas against A
 with 95% bootstrap intervals resampled over problems. Every cost is re-priced from
@@ -104,7 +104,7 @@ list.
 
 Seed 1's `checkpoints.csv` omits the judge columns the raw run produced: its judges
 (Gemini 3.1 Pro, gpt-oss-120b) were out of date and that section was dropped before
-publication. The seed script now judges with Gemini 4 Argon.
+publication. The seed script now judges with Gemini 3.8 Flash (one cross-family judge; Argon dropped for cost on 2026-11-09).
 
 The release asset per seed holds the four run directories: every checkpoint's workspace
 snapshot, the Claude Code trace, the reviewer's requests and verdicts, and the hidden-test

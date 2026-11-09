@@ -64,7 +64,7 @@ for arm in a-plain b-conveyor c-review d-tests; do
   uv run python scripts/vl_shadow_review.py outputs/vl/$arm/sonnet-5.5_medium/<ts> \
     --model sonnet-5.5 --provider vertex --effort medium
 done
-uv run python scripts/vl_cross_judge.py outputs/vl/*/sonnet-5.5_medium/<ts> --judge gemini --max-usd 30
+uv run python scripts/vl_cross_judge.py outputs/vl/*/sonnet-5.5_medium/<ts> --judge gemini-flash --max-usd 10
 uv run python scripts/vl_cross_judge.py outputs/vl/*/sonnet-5.5_medium/<ts> --judge gpt-oss --checkpoints all --max-usd 5
 uv run python scripts/vl_table.py A=outputs/vl/a-plain/... B=outputs/vl/b-conveyor/... \
   C=outputs/vl/c-review/... D=outputs/vl/d-tests/... --price-model sonnet-5.5 \
