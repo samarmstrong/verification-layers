@@ -68,6 +68,14 @@ You can also run the post-processing steps individually:
 - `scripts/vl_shadow_review.py <run_dir>`
 - `scripts/vl_cross_judge.py <run_dirs...> --judge gemini-flash --max-usd N`
 - `scripts/vl_table.py A=<run_dir> B=<run_dir> C=<run_dir> D=<run_dir> --price-model sonnet-5.5 --no-tests-quality D` (computes per-arm stats and paired deltas against Arm A with 95% bootstrap confidence intervals resampled by problem; re-prices all token usage from `configs/models/sonnet-5.5.yaml`).
+- `scripts/vl_intervals.py seed-1=<csv> seed-2=<csv>`: the preregistered analysis across seeds (paired deltas per seed and pooled, per-problem deltas, rerun noise, stripped-spec contrasts).
+- `scripts/vl_spend.py <stamp>`: a seed's re-priced spend so far.
+
+Seed 2 adds two exploratory arms on specs with the worked I/O examples removed (`scripts/vl_strip_examples.py`) and a spend cap; see [`docs/preregistration-seed-2.md`](docs/preregistration-seed-2.md):
+
+```bash
+VL_STRIPPED_ARMS="a-plain c-review" VL_MAX_USD=300 scripts/vl_seed.sh
+```
 
 ## What's in `results/seed-N/`
 
