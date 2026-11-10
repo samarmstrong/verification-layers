@@ -14,6 +14,11 @@
 #   VL_MAX_USD=300  stop every arm (and the slop-code containers) once the seed's
 #       re-priced spend (scripts/vl_spend.py) passes this, and skip later steps.
 #   VL_STAMP=...    use this stamp instead of the current time.
+#   VL_RUN_ARMS="b-conveyor a-plain-stripped"  with VL_STAMP: run the agent step for
+#       these arms only (launched 90 s apart, so they don't race to build the image),
+#       then shadow review, judge and table over every arm under the stamp. Shadow
+#       review and the judge skip checkpoints they already did. For re-running arms
+#       that failed to start; record any use under the preregistration's Deviations.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -71,11 +76,17 @@ stop_everything() {
   [[ -z "$ids" ]] || docker stop -t 5 $ids >/dev/null || true
 }
 
+run_arms=("${arms[@]}")
+if [[ -n "${VL_RUN_ARMS:-}" ]]; then
+  [[ -n "${VL_STAMP:-}" ]] || { echo "VL_RUN_ARMS needs VL_STAMP" >&2; exit 2; }
+  read -ra run_arms <<<"$VL_RUN_ARMS"
+fi
 pids=()
-for arm in "${arms[@]}"; do
+for arm in "${run_arms[@]}"; do
+  [[ ${#pids[@]} -gt 0 && -n "${VL_RUN_ARMS:-}" ]] && sleep 90
   env "$(problems_env "$arm")" uv run slop-code run -c "configs/runs/vl-$arm.yaml" \
     -n "$workers" --no-live-progress "save_template=vl/$arm/\${model.name}_\${thinking}/$stamp" \
-    >"$logs/$arm.log" 2>&1 &
+    >>"$logs/$arm.log" 2>&1 &
   pids+=("$!")
 done
 
@@ -91,9 +102,9 @@ if [[ -n "${VL_MAX_USD:-}" ]]; then
 fi
 
 status=0
-for i in "${!arms[@]}"; do
+for i in "${!run_arms[@]}"; do
   if ! wait "${pids[$i]}"; then
-    echo "arm ${arms[$i]} exited non-zero; see $logs/${arms[$i]}.log" >&2
+    echo "arm ${run_arms[$i]} exited non-zero; see $logs/${run_arms[$i]}.log" >&2
     status=1
   fi
 done
