@@ -60,7 +60,8 @@ def load(specs: list[str]) -> dict[str, dict[Key, Row]]:
         with Path(path).open() as f:
             for r in csv.DictReader(f):
                 row: Row = {k: _num(v) if k not in {"arm", "problem", "checkpoint"} else v
-                            for k, v in r.items() if k not in {"in_loop_first_verdict", "shadow_verdict"}}
+                            for k, v in r.items()
+                            if k not in {"in_loop_first_verdict", "shadow_verdict"} and not k.startswith("judge_")}
                 row["seed"] = seed
                 # Arm D is compared on production code only (tests/ stripped).
                 if r.get("erosion_no_tests"):

@@ -67,7 +67,20 @@ def main() -> None:
 
     def run(job) -> float:
         problem, name, snapshot, out = job
-        result = reviewer.review(specs_through(problem, name), snapshot)
+        # The reviewer's reply sometimes fails to parse (a finding without `evidence`,
+        # or a string where an object belongs) and Reviewer.review raises. Retry, then
+        # record the checkpoint as an error so one bad reply does not stop the pass.
+        # Errors are excluded from the shadow rates, as with the cross-family judge.
+        for attempt in range(3):
+            try:
+                result = reviewer.review(specs_through(problem, name), snapshot)
+                break
+            except (TypeError, ValueError) as exc:  # pydantic ValidationError is a ValueError
+                print(f"{problem.name}/{name}: reply did not parse (attempt {attempt + 1}): {type(exc).__name__}")
+        else:
+            out.write_text(json.dumps({"mode": "shadow", "verdict": "error", "cost": 0.0}, indent=2))
+            print(f"{problem.name}/{name}: error after 3 attempts")
+            return 0.0
         out.write_text(
             json.dumps(
                 {"mode": "shadow", **result.model_dump(mode="json")}, indent=2
