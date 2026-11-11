@@ -1,0 +1,157 @@
+101 snapshots to review
+cfgpipe/checkpoint_1: approve ($0.015)
+cfgpipe/checkpoint_2: approve ($0.021)
+cfgpipe/checkpoint_3: approve ($0.026)
+cfgpipe/checkpoint_4: approve ($0.044)
+circuit_eval/checkpoint_1: reject ($0.023)
+cfgpipe/checkpoint_5: approve ($0.048)
+cfgpipe/checkpoint_6: approve ($0.053)
+circuit_eval/checkpoint_2: approve ($0.028)
+circuit_eval/checkpoint_3: approve ($0.043)
+circuit_eval/checkpoint_5: reject ($0.059)
+circuit_eval/checkpoint_4: approve ($0.051)
+circuit_eval/checkpoint_8: reject ($0.103)
+code_search/checkpoint_1: approve ($0.015)
+circuit_eval/checkpoint_7: reject ($0.087)
+code_search/checkpoint_2: approve ($0.017)
+code_search/checkpoint_3: reject ($0.026)
+circuit_eval/checkpoint_6: reject ($0.086)
+code_search/checkpoint_5: reject ($0.061)
+code_search/checkpoint_4: reject ($0.056)
+dag_execution/checkpoint_1: reject ($0.044)
+dag_execution/checkpoint_2: approve ($0.057)
+database_migration/checkpoint_1: approve ($0.028)
+dag_execution/checkpoint_3: approve ($0.060)
+database_migration/checkpoint_2: approve ($0.033)
+database_migration/checkpoint_3: approve ($0.054)
+database_migration/checkpoint_4: approve ($0.072)
+database_migration/checkpoint_5: approve ($0.088)
+dynamic_buffer/checkpoint_3: reject ($0.088)
+dynamic_buffer/checkpoint_4: approve ($0.102)
+dynamic_config_service_api/checkpoint_1: reject ($0.027)
+dynamic_buffer/checkpoint_2: reject ($0.077)
+Traceback (most recent call last):
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 85, in <module>
+    main()
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 80, in main
+    total = sum(pool.map(run, jobs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 70, in run
+    result = reviewer.review(specs_through(problem, name), snapshot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/agent_runner/review.py", line 310, in review
+    findings=[ReviewFinding(**f) for f in payload.get("findings", [])],
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/pydantic/main.py", line 280, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReviewFinding
+evidence
+  Field required [type=missing, input_value={'category': 'correctness...ched rows are fragile."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing
+70 snapshots to review
+dynamic_config_service_api/checkpoint_4: reject ($0.093)
+dynamic_config_service_api/checkpoint_3: reject ($0.068)
+dynamic_config_service_api/checkpoint_2: reject ($0.046)
+dynamic_buffer/checkpoint_1: reject ($0.044)
+eve_route_planner/checkpoint_1: reject ($0.022)
+execution_server/checkpoint_1: approve ($0.019)
+eve_route_planner/checkpoint_3: reject ($0.040)
+execution_server/checkpoint_2: approve ($0.021)
+execution_server/checkpoint_3: approve ($0.026)
+Traceback (most recent call last):
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 85, in <module>
+    main()
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 80, in main
+    total = sum(pool.map(run, jobs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 70, in run
+    result = reviewer.review(specs_through(problem, name), snapshot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/agent_runner/review.py", line 310, in review
+    findings=[ReviewFinding(**f) for f in payload.get("findings", [])],
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/pydantic/main.py", line 280, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReviewFinding
+evidence
+  Field required [type=missing, input_value={'category': 'correctness...rgo or dock counting)."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing
+61 snapshots to review
+execution_server/checkpoint_6: reject ($0.051)
+execution_server/checkpoint_5: approve ($0.041)
+execution_server/checkpoint_4: approve ($0.036)
+file_backup/checkpoint_1: approve ($0.023)
+Traceback (most recent call last):
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 85, in <module>
+    main()
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 80, in main
+    total = sum(pool.map(run, jobs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 70, in run
+    result = reviewer.review(specs_through(problem, name), snapshot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/agent_runner/review.py", line 310, in review
+    findings=[ReviewFinding(**f) for f in payload.get("findings", [])],
+              ^^^^^^^^^^^^^^^^^^
+TypeError: slop_code.agent_runner.review.ReviewFinding() argument after ** must be a mapping, not str
+15 snapshots to review
+textdrop/checkpoint_4: reject ($0.036)
+textdrop/checkpoint_5: reject ($0.041)
+textdrop/checkpoint_3: approve ($0.034)
+trajectory_api/checkpoint_1: reject ($0.032)
+textdrop/checkpoint_6: reject ($0.051)
+rejector/checkpoint_5: approve ($0.092)
+trajectory_api/checkpoint_2: reject ($0.046)
+trajectory_api/checkpoint_4: reject ($0.073)
+trajectory_api/checkpoint_3: reject ($0.058)
+xjq/checkpoint_1: reject ($0.012)
+trajectory_api/checkpoint_5: reject ($0.098)
+xjq/checkpoint_4: reject ($0.019)
+xjq/checkpoint_5: reject ($0.019)
+xjq/checkpoint_3: reject ($0.023)
+xjq/checkpoint_2: reject ($0.022)
+shadow review cost: $0.65

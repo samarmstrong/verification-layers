@@ -1,0 +1,1062 @@
+Starting Slop Code CLI
+	Seed: 42
+	Verbose: 0
+--------------------------------
+/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/entrypoints/config/resolvers.py:37: UserWarning: register_new_resolver() is deprecated and will be removed in a future release.
+Use register_resolver() instead.
+See https://github.com/hydra-ecosystem/omegaconf/issues/426 for migration instructions.
+
+  OmegaConf.register_new_resolver(
+Output directory: outputs/vl/c-review-stripped/sonnet-5.5_medium/20261110T1535
+Using model: vertex/sonnet-5.5
+Using problems from config: cfgpipe, circuit_eval, code_search, dag_execution, database_migration, dynamic_buffer, dynamic_config_service_api, eve_route_planner, execution_server, file_backup, file_merger, file_query_tool, forge, log_query, metric_transform_lang, migrate_configs, rejector, textdrop, trajectory_api, xjq
+[11/10/26 20:15:50] INFO     Starting agent run                                 
+                             agent_config='/home/sam_deeptempo_ai/verification-l
+                             ayers/.venv/lib/python3.12/configs/agents/claude_co
+                             de_vl.yaml'                                        
+                             environment_config='/home/sam_deeptempo_ai/verifica
+                             tion-layers/.venv/lib/python3.12/configs/environmen
+                             ts/docker-python3.12-uv.yaml'                      
+                             model='vertex/sonnet-5.5' one_shot=False           
+                             pass_policy='any' problem_names=['cfgpipe',        
+                             'circuit_eval', 'code_search', 'dag_execution',    
+                             'database_migration', 'dynamic_buffer',            
+                             'dynamic_config_service_api', 'eve_route_planner', 
+                             'execution_server', 'file_backup', 'file_merger',  
+                             'file_query_tool', 'forge', 'log_query',           
+                             'metric_transform_lang', 'migrate_configs',        
+                             'rejector', 'textdrop', 'trajectory_api', 'xjq']   
+                             process_id=3408457                                 
+                             prompt_path='/home/sam_deeptempo_ai/verification-la
+                             yers/.venv/lib/python3.12/configs/prompts/vl-convey
+                             or.jinja' thinking='medium'                        
+                             thread_name='MainThread'                           
+                    INFO     Detected resume point completed_count=6            
+                             invalidated_count=2 last_completed='checkpoint_6'  
+                             prior_cost=1.1224588 prior_steps=40                
+                             resume_from='checkpoint_7'                         
+                    INFO     Detected resume point completed_count=0            
+                             invalidated_count=3 last_completed=None            
+                             prior_cost=0.0 prior_steps=0                       
+                             resume_from='checkpoint_1'                         
+                    INFO     Detected resume point completed_count=6            
+                             invalidated_count=2 last_completed='checkpoint_6'  
+                             prior_cost=0.8243906999999999 prior_steps=49       
+                             resume_from='checkpoint_7'                         
+Output directory exists: 17 done, 3 to run.
+                    INFO     Building base image for environment 'python3.12'   
+                             base_image='ghcr.io/astral-sh/uv:python3.12-trixie-
+                             slim' image_name='slop-code:python3.12'            
+                    INFO     Checking if image exists                           
+                             image_name='slop-code:python3.12'                  
+[11/10/26 20:15:51] INFO     Found current image and not forcing build          
+                    INFO     Checking if image exists                           
+                             image_name='slop-code:claude_code-2.1.318-python3.1
+                             2'                                                 
+                    INFO     Found image and not forcing build                  
+                    INFO     Starting agent runs num_problems=3 num_workers=2   
+                             process_id=3408457 thread_name='MainThread'        
+                    INFO     Starting run problems queue monitor                
+                             problem_names=['circuit_eval', 'eve_route_planner',
+                             'forge']                                           
+[11/10/26 20:15:56] INFO     'circuit_eval': progress update                    
+                             checkpoint='STARTING' cost=0.0 elapsed=0.004055    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'circuit_eval': progress update                    
+                             checkpoint='STARTING' cost=0.0 elapsed=0.011698    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.0 elapsed=0.112958
+                             state='running' steps=0 total_steps=0              
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='STARTING' cost=0.0 elapsed=0.003043    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='STARTING' cost=0.0 elapsed=0.05382     
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.0 elapsed=0.1547  
+                             state='running' steps=0 total_steps=0              
+/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Starting Slop Code CLI
+	Seed: 42
+	Verbose: 0
+--------------------------------
+/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/entrypoints/config/resolvers.py:37: UserWarning: register_new_resolver() is deprecated and will be removed in a future release.
+Use register_resolver() instead.
+See https://github.com/hydra-ecosystem/omegaconf/issues/426 for migration instructions.
+
+  OmegaConf.register_new_resolver(
+Output directory: outputs/vl/c-review-stripped/sonnet-5.5_medium/20261110T1535
+Using model: vertex/sonnet-5.5
+Using problems from config: cfgpipe, circuit_eval, code_search, dag_execution, database_migration, dynamic_buffer, dynamic_config_service_api, eve_route_planner, execution_server, file_backup, file_merger, file_query_tool, forge, log_query, metric_transform_lang, migrate_configs, rejector, textdrop, trajectory_api, xjq
+[11/10/26 20:22:26] INFO     Starting agent run                                 
+                             agent_config='/home/sam_deeptempo_ai/verification-l
+                             ayers/.venv/lib/python3.12/configs/agents/claude_co
+                             de_vl.yaml'                                        
+                             environment_config='/home/sam_deeptempo_ai/verifica
+                             tion-layers/.venv/lib/python3.12/configs/environmen
+                             ts/docker-python3.12-uv.yaml'                      
+                             model='vertex/sonnet-5.5' one_shot=False           
+                             pass_policy='any' problem_names=['cfgpipe',        
+                             'circuit_eval', 'code_search', 'dag_execution',    
+                             'database_migration', 'dynamic_buffer',            
+                             'dynamic_config_service_api', 'eve_route_planner', 
+                             'execution_server', 'file_backup', 'file_merger',  
+                             'file_query_tool', 'forge', 'log_query',           
+                             'metric_transform_lang', 'migrate_configs',        
+                             'rejector', 'textdrop', 'trajectory_api', 'xjq']   
+                             process_id=3431429                                 
+                             prompt_path='/home/sam_deeptempo_ai/verification-la
+                             yers/.venv/lib/python3.12/configs/prompts/vl-convey
+                             or.jinja' thinking='medium'                        
+                             thread_name='MainThread'                           
+                    INFO     Detected resume point from artifacts (no           
+                             run_info.yaml) completed_count=0                   
+                             invalidated_count=8 resume_from='checkpoint_1'     
+                    INFO     Detected resume point from artifacts (no           
+                             run_info.yaml) completed_count=0                   
+                             invalidated_count=3 resume_from='checkpoint_1'     
+Output directory exists: 17 done, 3 to run.
+                    INFO     Building base image for environment 'python3.12'   
+                             base_image='ghcr.io/astral-sh/uv:python3.12-trixie-
+                             slim' image_name='slop-code:python3.12'            
+                    INFO     Checking if image exists                           
+                             image_name='slop-code:python3.12'                  
+                    INFO     Found current image and not forcing build          
+                    INFO     Checking if image exists                           
+                             image_name='slop-code:claude_code-2.1.318-python3.1
+                             2'                                                 
+                    INFO     Found image and not forcing build                  
+                    INFO     Starting agent runs num_problems=3 num_workers=2   
+                             process_id=3431429 thread_name='MainThread'        
+                    INFO     Starting run problems queue monitor                
+                             problem_names=['circuit_eval', 'eve_route_planner',
+                             'forge']                                           
+[11/10/26 20:22:30] INFO     'circuit_eval': progress update                    
+                             checkpoint='STARTING' cost=0.0 elapsed=0.003423    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'circuit_eval': progress update                    
+                             checkpoint='STARTING' cost=0.0 elapsed=0.009512    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='STARTING' cost=0.0 elapsed=0.002058    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='STARTING' cost=0.0 elapsed=0.025731    
+                             state='initialized' steps=0 total_steps=0          
+                    INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.0 elapsed=0.111053
+                             state='running' steps=0 total_steps=0              
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.0 elapsed=0.126739
+                             state='running' steps=0 total_steps=0              
+[11/10/26 20:22:35] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.0117              
+                             elapsed=5.23367 state='running' steps=1            
+                             total_steps=1                                      
+[11/10/26 20:22:37] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.03209             
+                             elapsed=7.587017 state='running' steps=2           
+                             total_steps=2                                      
+[11/10/26 20:22:42] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.01151             
+                             elapsed=12.472704 state='running' steps=1          
+                             total_steps=1                                      
+[11/10/26 20:23:09] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.04156             
+                             elapsed=39.715236 state='running' steps=3          
+                             total_steps=3                                      
+[11/10/26 20:23:13] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.0467              
+                             elapsed=42.851536 state='running' steps=2          
+                             total_steps=2                                      
+[11/10/26 20:23:15] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.05721             
+                             elapsed=44.820723 state='running' steps=4          
+                             total_steps=4                                      
+[11/10/26 20:23:16] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.11267             
+                             elapsed=46.45626 state='running' steps=3           
+                             total_steps=3                                      
+[11/10/26 20:23:23] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_1' cost=0.11267             
+                             elapsed=53.316898 state='evaluating' steps=3       
+                             total_steps=3                                      
+[11/10/26 20:23:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.11267             
+                             elapsed=74.187026 state='running' steps=0          
+                             total_steps=3                                      
+[11/10/26 20:23:46] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.11986             
+                             elapsed=76.539967 state='running' steps=1          
+                             total_steps=4                                      
+[11/10/26 20:23:47] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.13402             
+                             elapsed=77.641889 state='running' steps=2          
+                             total_steps=5                                      
+[11/10/26 20:23:51] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.16082             
+                             elapsed=81.74673 state='running' steps=3           
+                             total_steps=6                                      
+[11/10/26 20:24:02] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.17426             
+                             elapsed=92.607637 state='running' steps=4          
+                             total_steps=7                                      
+[11/10/26 20:24:10] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.20853             
+                             elapsed=99.965369 state='running' steps=5          
+                             total_steps=8                                      
+[11/10/26 20:24:13] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.07224             
+                             elapsed=103.722644 state='running' steps=5         
+                             total_steps=5                                      
+[11/10/26 20:24:24] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.21753             
+                             elapsed=114.079228 state='running' steps=6         
+                             total_steps=9                                      
+[11/10/26 20:24:30] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.22998             
+                             elapsed=120.437705 state='running' steps=7         
+                             total_steps=10                                     
+[11/10/26 20:24:38] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_2' cost=0.22998             
+                             elapsed=128.797812 state='evaluating' steps=7      
+                             total_steps=10                                     
+[11/10/26 20:24:40] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.08177             
+                             elapsed=129.845708 state='running' steps=6         
+                             total_steps=6                                      
+[11/10/26 20:24:44] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.14932             
+                             elapsed=134.202187 state='running' steps=7         
+                             total_steps=7                                      
+[11/10/26 20:25:08] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.22998             
+                             elapsed=158.175654 state='running' steps=0         
+                             total_steps=10                                     
+[11/10/26 20:25:10] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.16077             
+                             elapsed=160.142324 state='running' steps=8         
+                             total_steps=8                                      
+[11/10/26 20:25:11] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.24108             
+                             elapsed=161.029784 state='running' steps=1         
+                             total_steps=11                                     
+[11/10/26 20:25:12] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.26147             
+                             elapsed=162.382195 state='running' steps=2         
+                             total_steps=12                                     
+[11/10/26 20:25:34] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.28038             
+                             elapsed=184.754953 state='running' steps=3         
+                             total_steps=13                                     
+[11/10/26 20:25:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.2993              
+                             elapsed=194.615499 state='running' steps=4         
+                             total_steps=14                                     
+[11/10/26 20:25:46] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.17654             
+                             elapsed=196.52775 state='running' steps=9          
+                             total_steps=9                                      
+[11/10/26 20:26:03] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.21358             
+                             elapsed=212.893908 state='running' steps=10        
+                             total_steps=10                                     
+[11/10/26 20:26:11] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.32038             
+                             elapsed=221.742215 state='running' steps=5         
+                             total_steps=15                                     
+[11/10/26 20:26:14] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.33213             
+                             elapsed=224.597239 state='running' steps=6         
+                             total_steps=16                                     
+[11/10/26 20:26:16] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.22563             
+                             elapsed=226.266463 state='running' steps=11        
+                             total_steps=11                                     
+[11/10/26 20:26:19] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.34287             
+                             elapsed=229.45256 state='running' steps=7          
+                             total_steps=17                                     
+[11/10/26 20:26:26] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.44344             
+                             elapsed=236.063635 state='running' steps=8         
+                             total_steps=18                                     
+[11/10/26 20:26:35] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_3' cost=0.44344             
+                             elapsed=245.17524 state='evaluating' steps=8       
+                             total_steps=18                                     
+[11/10/26 20:26:37] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.23803             
+                             elapsed=247.63654 state='running' steps=12         
+                             total_steps=12                                     
+[11/10/26 20:26:56] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.25298             
+                             elapsed=266.507387 state='running' steps=13        
+                             total_steps=13                                     
+[11/10/26 20:26:57] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_1' cost=0.25298             
+                             elapsed=266.858907 state='evaluating' steps=13     
+                             total_steps=13                                     
+[11/10/26 20:27:21] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.44344             
+                             elapsed=291.326123 state='running' steps=0         
+                             total_steps=18                                     
+[11/10/26 20:27:23] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.45314             
+                             elapsed=293.428844 state='running' steps=1         
+                             total_steps=19                                     
+[11/10/26 20:27:24] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.47166             
+                             elapsed=294.78067 state='running' steps=2          
+                             total_steps=20                                     
+[11/10/26 20:27:35] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.49959             
+                             elapsed=305.141888 state='running' steps=3         
+                             total_steps=21                                     
+[11/10/26 20:27:54] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.51829             
+                             elapsed=324.511435 state='running' steps=4         
+                             total_steps=22                                     
+[11/10/26 20:28:02] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.53127             
+                             elapsed=332.36973 state='running' steps=5          
+                             total_steps=23                                     
+[11/10/26 20:28:07] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.54238             
+                             elapsed=337.224793 state='running' steps=6         
+                             total_steps=24                                     
+[11/10/26 20:28:10] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.25298             
+                             elapsed=339.78544 state='running' steps=0          
+                             total_steps=13                                     
+[11/10/26 20:28:12] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.26199             
+                             elapsed=341.888285 state='running' steps=1         
+                             total_steps=14                                     
+[11/10/26 20:28:13] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.28086             
+                             elapsed=343.240323 state='running' steps=2         
+                             total_steps=15                                     
+[11/10/26 20:28:16] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.60824             
+                             elapsed=346.584743 state='running' steps=7         
+                             total_steps=25                                     
+[11/10/26 20:28:29] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_4' cost=0.60824             
+                             elapsed=358.947773 state='evaluating' steps=7      
+                             total_steps=25                                     
+[11/10/26 20:29:03] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.30573             
+                             elapsed=393.387403 state='running' steps=3         
+                             total_steps=16                                     
+[11/10/26 20:29:05] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.32605             
+                             elapsed=395.740501 state='running' steps=4         
+                             total_steps=17                                     
+[11/10/26 20:29:10] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.33392             
+                             elapsed=400.345848 state='running' steps=5         
+                             total_steps=18                                     
+[11/10/26 20:29:34] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.35237             
+                             elapsed=424.46962 state='running' steps=6          
+                             total_steps=19                                     
+[11/10/26 20:29:47] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.60824             
+                             elapsed=437.563772 state='running' steps=0         
+                             total_steps=25                                     
+[11/10/26 20:29:49] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.61771             
+                             elapsed=439.666573 state='running' steps=1         
+                             total_steps=26                                     
+[11/10/26 20:29:50] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.63704             
+                             elapsed=440.768624 state='running' steps=2         
+                             total_steps=27                                     
+[11/10/26 20:29:57] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.36526             
+                             elapsed=447.592162 state='running' steps=7         
+                             total_steps=20                                     
+[11/10/26 20:30:06] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.47182             
+                             elapsed=456.20261 state='running' steps=8          
+                             total_steps=21                                     
+[11/10/26 20:30:09] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.68192             
+                             elapsed=459.63947 state='running' steps=3          
+                             total_steps=28                                     
+[11/10/26 20:30:22] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.48433             
+                             elapsed=472.319288 state='running' steps=9         
+                             total_steps=22                                     
+[11/10/26 20:30:33] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.7063              
+                             elapsed=483.262326 state='running' steps=4         
+                             total_steps=29                                     
+[11/10/26 20:30:42] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.78386             
+                             elapsed=492.37188 state='running' steps=5          
+                             total_steps=30                                     
+[11/10/26 20:30:44] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.49939             
+                             elapsed=494.439809 state='running' steps=10        
+                             total_steps=23                                     
+[11/10/26 20:30:51] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.52648             
+                             elapsed=501.047976 state='running' steps=11        
+                             total_steps=24                                     
+[11/10/26 20:30:54] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_5' cost=0.78386             
+                             elapsed=503.98374 state='evaluating' steps=5       
+                             total_steps=30                                     
+[11/10/26 20:31:04] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.53933             
+                             elapsed=514.662885 state='running' steps=12        
+                             total_steps=25                                     
+[11/10/26 20:31:22] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.55129             
+                             elapsed=532.529679 state='running' steps=13        
+                             total_steps=26                                     
+[11/10/26 20:31:29] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.56178             
+                             elapsed=538.886225 state='running' steps=14        
+                             total_steps=27                                     
+                    INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_2' cost=0.56178             
+                             elapsed=538.986986 state='evaluating' steps=14     
+                             total_steps=27                                     
+[11/10/26 20:32:27] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.78386             
+                             elapsed=597.456754 state='running' steps=0         
+                             total_steps=30                                     
+[11/10/26 20:32:29] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.79522             
+                             elapsed=599.559962 state='running' steps=1         
+                             total_steps=31                                     
+[11/10/26 20:32:31] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.81512             
+                             elapsed=601.162339 state='running' steps=2         
+                             total_steps=32                                     
+[11/10/26 20:32:35] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.84504             
+                             elapsed=605.51756 state='running' steps=3          
+                             total_steps=33                                     
+[11/10/26 20:32:46] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.8595              
+                             elapsed=616.628822 state='running' steps=4         
+                             total_steps=34                                     
+[11/10/26 20:33:06] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.88103             
+                             elapsed=636.496789 state='running' steps=5         
+                             total_steps=35                                     
+[11/10/26 20:33:14] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.94069             
+                             elapsed=644.105488 state='running' steps=6         
+                             total_steps=36                                     
+[11/10/26 20:33:27] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_6' cost=0.94069             
+                             elapsed=656.968803 state='evaluating' steps=6      
+                             total_steps=36                                     
+[11/10/26 20:34:22] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.56178             
+                             elapsed=712.249306 state='running' steps=0         
+                             total_steps=27                                     
+[11/10/26 20:34:26] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.57076             
+                             elapsed=716.354097 state='running' steps=1         
+                             total_steps=28                                     
+[11/10/26 20:34:29] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.58652             
+                             elapsed=718.957639 state='running' steps=2         
+                             total_steps=29                                     
+[11/10/26 20:34:32] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.60657             
+                             elapsed=721.811548 state='running' steps=3         
+                             total_steps=30                                     
+[11/10/26 20:35:12] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=0.94069             
+                             elapsed=762.293123 state='running' steps=0         
+                             total_steps=36                                     
+[11/10/26 20:35:16] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=0.95414             
+                             elapsed=765.89751 state='running' steps=1          
+                             total_steps=37                                     
+[11/10/26 20:35:17] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=0.97683             
+                             elapsed=767.2495 state='running' steps=2           
+                             total_steps=38                                     
+[11/10/26 20:35:31] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.61458             
+                             elapsed=781.722708 state='running' steps=4         
+                             total_steps=31                                     
+[11/10/26 20:35:36] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.63918             
+                             elapsed=786.580581 state='running' steps=5         
+                             total_steps=32                                     
+[11/10/26 20:35:41] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.64998             
+                             elapsed=791.688392 state='running' steps=6         
+                             total_steps=33                                     
+[11/10/26 20:35:42] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.02403             
+                             elapsed=791.879781 state='running' steps=3         
+                             total_steps=39                                     
+[11/10/26 20:35:43] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.66154             
+                             elapsed=793.541419 state='running' steps=7         
+                             total_steps=34                                     
+[11/10/26 20:35:45] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.67303             
+                             elapsed=795.645375 state='running' steps=8         
+                             total_steps=35                                     
+[11/10/26 20:35:49] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.68316             
+                             elapsed=799.000813 state='running' steps=9         
+                             total_steps=36                                     
+[11/10/26 20:36:05] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.05148             
+                             elapsed=815.505806 state='running' steps=4         
+                             total_steps=40                                     
+[11/10/26 20:36:12] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.69393             
+                             elapsed=822.125913 state='running' steps=10        
+                             total_steps=37                                     
+[11/10/26 20:36:19] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.07004             
+                             elapsed=828.870091 state='running' steps=5         
+                             total_steps=41                                     
+[11/10/26 20:36:27] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.17293             
+                             elapsed=837.728728 state='running' steps=6         
+                             total_steps=42                                     
+[11/10/26 20:36:35] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.72119             
+                             elapsed=845.247823 state='running' steps=11        
+                             total_steps=38                                     
+[11/10/26 20:36:38] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.73445             
+                             elapsed=848.352005 state='running' steps=12        
+                             total_steps=39                                     
+[11/10/26 20:36:40] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.18741             
+                             elapsed=850.093512 state='running' steps=7         
+                             total_steps=43                                     
+[11/10/26 20:36:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.19506             
+                             elapsed=854.448557 state='running' steps=8         
+                             total_steps=44                                     
+[11/10/26 20:36:58] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_7' cost=1.19506             
+                             elapsed=868.81335 state='evaluating' steps=8       
+                             total_steps=44                                     
+[11/10/26 20:37:12] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.75024             
+                             elapsed=882.235401 state='running' steps=13        
+                             total_steps=40                                     
+[11/10/26 20:37:27] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.76595             
+                             elapsed=896.849526 state='running' steps=14        
+                             total_steps=41                                     
+[11/10/26 20:37:31] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.77997             
+                             elapsed=901.454881 state='running' steps=15        
+                             total_steps=42                                     
+[11/10/26 20:38:07] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.79673             
+                             elapsed=937.337761 state='running' steps=16        
+                             total_steps=43                                     
+[11/10/26 20:38:25] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.81034             
+                             elapsed=954.955118 state='running' steps=17        
+                             total_steps=44                                     
+[11/10/26 20:38:37] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.96191             
+                             elapsed=967.566392 state='running' steps=18        
+                             total_steps=45                                     
+[11/10/26 20:38:52] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.19506             
+                             elapsed=981.914463 state='running' steps=0         
+                             total_steps=44                                     
+[11/10/26 20:38:55] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=0.97869             
+                             elapsed=985.437399 state='running' steps=19        
+                             total_steps=46                                     
+[11/10/26 20:38:56] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.26562             
+                             elapsed=986.269887 state='running' steps=1         
+                             total_steps=45                                     
+[11/10/26 20:38:57] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.28735             
+                             elapsed=987.371934 state='running' steps=2         
+                             total_steps=46                                     
+[11/10/26 20:39:13] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=1.00375             
+                             elapsed=1002.812067 state='running' steps=20       
+                             total_steps=47                                     
+[11/10/26 20:39:25] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=1.02179             
+                             elapsed=1014.929153 state='running' steps=21       
+                             total_steps=48                                     
+[11/10/26 20:39:30] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=1.0329              
+                             elapsed=1020.285775 state='evaluating' steps=22    
+                             total_steps=49                                     
+[11/10/26 20:42:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.34848             
+                             elapsed=1214.433613 state='running' steps=3        
+                             total_steps=47                                     
+[11/10/26 20:42:50] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.43026             
+                             elapsed=1220.290379 state='running' steps=4        
+                             total_steps=48                                     
+[11/10/26 20:43:26] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.46502             
+                             elapsed=1256.423068 state='running' steps=5        
+                             total_steps=49                                     
+[11/10/26 20:44:00] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.50122             
+                             elapsed=1290.807162 state='running' steps=6        
+                             total_steps=50                                     
+[11/10/26 20:44:21] INFO     'eve_route_planner': progress update               
+                             checkpoint='checkpoint_3' cost=1.50403             
+                             elapsed=1311.411235 state='completed' steps=22     
+                             total_steps=71                                     
+[11/10/26 20:44:28] INFO     'forge': progress update checkpoint='STARTING'     
+                             cost=0.0 elapsed=0.002759 state='initialized'      
+                             steps=0 total_steps=0                              
+                    INFO     'forge': progress update checkpoint='STARTING'     
+                             cost=0.0 elapsed=0.010519 state='initialized'      
+                             steps=0 total_steps=0                              
+                    INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.0 elapsed=0.113437 state='running' steps=0  
+                             total_steps=0                                      
+[11/10/26 20:44:34] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.01115 elapsed=6.470364 state='running'      
+                             steps=1 total_steps=1                              
+[11/10/26 20:44:51] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.03653 elapsed=23.085641 state='running'     
+                             steps=2 total_steps=2                              
+[11/10/26 20:46:11] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.52563             
+                             elapsed=1421.778422 state='running' steps=7        
+                             total_steps=51                                     
+[11/10/26 20:46:14] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.546               
+                             elapsed=1424.131489 state='running' steps=8        
+                             total_steps=52                                     
+[11/10/26 20:46:15] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.56653             
+                             elapsed=1425.486454 state='running' steps=9        
+                             total_steps=53                                     
+[11/10/26 20:46:16] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.58672             
+                             elapsed=1426.587808 state='running' steps=10       
+                             total_steps=54                                     
+[11/10/26 20:46:20] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.60741             
+                             elapsed=1429.942082 state='running' steps=11       
+                             total_steps=55                                     
+[11/10/26 20:46:21] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.62966             
+                             elapsed=1431.294154 state='running' steps=12       
+                             total_steps=56                                     
+[11/10/26 20:46:23] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.65001             
+                             elapsed=1433.397254 state='running' steps=13       
+                             total_steps=57                                     
+[11/10/26 20:46:26] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.67088             
+                             elapsed=1436.000523 state='running' steps=14       
+                             total_steps=58                                     
+[11/10/26 20:46:28] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.69151             
+                             elapsed=1437.853665 state='running' steps=15       
+                             total_steps=59                                     
+[11/10/26 20:46:29] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.71225             
+                             elapsed=1439.456449 state='running' steps=16       
+                             total_steps=60                                     
+[11/10/26 20:46:31] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.73292             
+                             elapsed=1441.55914 state='running' steps=17        
+                             total_steps=61                                     
+[11/10/26 20:46:37] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.76108             
+                             elapsed=1447.665579 state='running' steps=18       
+                             total_steps=62                                     
+[11/10/26 20:46:55] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.04512 elapsed=147.302046 state='running'    
+                             steps=3 total_steps=3                              
+[11/10/26 20:46:59] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.05505 elapsed=151.406918 state='running'    
+                             steps=4 total_steps=4                              
+[11/10/26 20:47:02] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.0901 elapsed=154.761082 state='running'     
+                             steps=5 total_steps=5                              
+[11/10/26 20:47:09] INFO     'forge': progress update checkpoint='checkpoint_1' 
+                             cost=0.0901 elapsed=161.238351 state='evaluating'  
+                             steps=5 total_steps=5                              
+[11/10/26 20:47:17] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.78255             
+                             elapsed=1487.302589 state='running' steps=19       
+                             total_steps=63                                     
+[11/10/26 20:47:34] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.0901 elapsed=186.362907 state='running'     
+                             steps=0 total_steps=5                              
+[11/10/26 20:47:36] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.09886 elapsed=188.715967 state='running'    
+                             steps=1 total_steps=6                              
+[11/10/26 20:47:38] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.11609 elapsed=190.068127 state='running'    
+                             steps=2 total_steps=7                              
+[11/10/26 20:47:39] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.13811 elapsed=191.420046 state='running'    
+                             steps=3 total_steps=8                              
+[11/10/26 20:47:51] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.14927 elapsed=203.282032 state='running'    
+                             steps=4 total_steps=9                              
+[11/10/26 20:47:54] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.17283 elapsed=206.636614 state='running'    
+                             steps=5 total_steps=10                             
+[11/10/26 20:48:04] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.18202 elapsed=216.500048 state='running'    
+                             steps=6 total_steps=11                             
+[11/10/26 20:48:11] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.1907 elapsed=223.107145 state='running'     
+                             steps=7 total_steps=12                             
+[11/10/26 20:48:15] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.2004 elapsed=227.461979 state='running'     
+                             steps=8 total_steps=13                             
+[11/10/26 20:48:25] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.21009 elapsed=237.074326 state='running'    
+                             steps=9 total_steps=14                             
+[11/10/26 20:48:27] INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.2111 elapsed=239.428016 state='running'     
+                             steps=9 total_steps=14                             
+                    INFO     'forge': progress update checkpoint='checkpoint_2' 
+                             cost=0.2111 elapsed=239.529192 state='evaluating'  
+                             steps=9 total_steps=14                             
+[11/10/26 20:49:09] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.2111 elapsed=281.169443 state='running'     
+                             steps=0 total_steps=14                             
+[11/10/26 20:49:11] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.22071 elapsed=283.772592 state='running'    
+                             steps=1 total_steps=15                             
+[11/10/26 20:49:13] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.23902 elapsed=285.124868 state='running'    
+                             steps=2 total_steps=16                             
+[11/10/26 20:49:14] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.80377             
+                             elapsed=1604.007402 state='running' steps=20       
+                             total_steps=64                                     
+[11/10/26 20:49:16] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.26474 elapsed=288.479363 state='running'    
+                             steps=3 total_steps=17                             
+[11/10/26 20:49:24] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.82723             
+                             elapsed=1614.11919 state='running' steps=21        
+                             total_steps=65                                     
+[11/10/26 20:49:25] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.27672 elapsed=297.839494 state='running'    
+                             steps=4 total_steps=18                             
+[11/10/26 20:49:30] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.8533              
+                             elapsed=1620.476782 state='running' steps=22       
+                             total_steps=66                                     
+[11/10/26 20:49:36] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.28859 elapsed=308.201349 state='running'    
+                             steps=5 total_steps=19                             
+[11/10/26 20:49:37] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.87677             
+                             elapsed=1627.083955 state='running' steps=23       
+                             total_steps=67                                     
+[11/10/26 20:49:43] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.33603 elapsed=315.308771 state='running'    
+                             steps=6 total_steps=20                             
+[11/10/26 20:49:50] INFO     'forge': progress update checkpoint='checkpoint_3' 
+                             cost=0.33603 elapsed=322.66659 state='evaluating'  
+                             steps=6 total_steps=20                             
+[11/10/26 20:50:40] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.90024             
+                             elapsed=1690.242988 state='running' steps=24       
+                             total_steps=68                                     
+[11/10/26 20:50:56] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.33603 elapsed=388.835632 state='running'    
+                             steps=0 total_steps=20                             
+[11/10/26 20:50:59] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.34601 elapsed=391.438855 state='running'    
+                             steps=1 total_steps=21                             
+[11/10/26 20:51:00] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.36533 elapsed=392.791246 state='running'    
+                             steps=2 total_steps=22                             
+[11/10/26 20:51:04] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.38156 elapsed=396.145436 state='running'    
+                             steps=3 total_steps=23                             
+[11/10/26 20:51:17] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.39593 elapsed=409.759097 state='running'    
+                             steps=4 total_steps=24                             
+[11/10/26 20:51:21] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.42424 elapsed=413.373509 state='running'    
+                             steps=5 total_steps=25                             
+[11/10/26 20:51:34] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.43442 elapsed=425.995714 state='running'    
+                             steps=6 total_steps=26                             
+[11/10/26 20:51:38] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.44311 elapsed=430.351226 state='running'    
+                             steps=7 total_steps=27                             
+[11/10/26 20:51:51] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.45281 elapsed=443.714968 state='running'    
+                             steps=8 total_steps=28                             
+[11/10/26 20:51:52] INFO     'forge': progress update checkpoint='checkpoint_4' 
+                             cost=0.45281 elapsed=444.066337 state='evaluating' 
+                             steps=8 total_steps=28                             
+[11/10/26 20:53:38] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.45281 elapsed=550.292516 state='running'    
+                             steps=0 total_steps=28                             
+[11/10/26 20:53:41] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.5196 elapsed=553.39762 state='running'      
+                             steps=1 total_steps=29                             
+[11/10/26 20:53:42] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.53629 elapsed=554.751453 state='running'    
+                             steps=2 total_steps=30                             
+[11/10/26 20:53:45] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.56667 elapsed=557.856762 state='running'    
+                             steps=3 total_steps=31                             
+[11/10/26 20:53:59] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.57953 elapsed=570.973096 state='running'    
+                             steps=4 total_steps=32                             
+[11/10/26 20:54:03] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.60194 elapsed=575.330775 state='running'    
+                             steps=5 total_steps=33                             
+[11/10/26 20:54:16] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.61268 elapsed=588.702385 state='running'    
+                             steps=6 total_steps=34                             
+[11/10/26 20:54:21] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.6197 elapsed=593.059448 state='running'     
+                             steps=7 total_steps=35                             
+[11/10/26 20:54:33] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.63022 elapsed=605.688491 state='running'    
+                             steps=8 total_steps=36                             
+[11/10/26 20:54:39] INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.63682 elapsed=611.296898 state='running'    
+                             steps=9 total_steps=37                             
+                    INFO     'forge': progress update checkpoint='checkpoint_5' 
+                             cost=0.63682 elapsed=611.403432 state='evaluating' 
+                             steps=9 total_steps=37                             
+[11/10/26 20:55:43] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.92444             
+                             elapsed=1993.171536 state='running' steps=25       
+                             total_steps=69                                     
+[11/10/26 20:55:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=1.94732             
+                             elapsed=1994.775152 state='running' steps=26       
+                             total_steps=70                                     
+[11/10/26 20:55:55] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.26123             
+                             elapsed=2005.38755 state='running' steps=27        
+                             total_steps=71                                     
+[11/10/26 20:56:20] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.27514             
+                             elapsed=2030.011237 state='running' steps=28       
+                             total_steps=72                                     
+[11/10/26 20:56:21] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.28782             
+                             elapsed=2031.613696 state='running' steps=29       
+                             total_steps=73                                     
+[11/10/26 20:56:45] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.63682 elapsed=737.14333 state='running'     
+                             steps=0 total_steps=37                             
+[11/10/26 20:56:47] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.64858 elapsed=739.746799 state='running'    
+                             steps=1 total_steps=38                             
+[11/10/26 20:56:48] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.66979 elapsed=740.850304 state='running'    
+                             steps=2 total_steps=39                             
+[11/10/26 20:56:53] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.69127 elapsed=745.70601 state='running'     
+                             steps=3 total_steps=40                             
+[11/10/26 20:57:06] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.70603 elapsed=758.070711 state='running'    
+                             steps=4 total_steps=41                             
+[11/10/26 20:57:15] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.71823 elapsed=767.681385 state='running'    
+                             steps=5 total_steps=42                             
+[11/10/26 20:57:20] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.76164 elapsed=772.036278 state='running'    
+                             steps=6 total_steps=43                             
+[11/10/26 20:57:36] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.77414 elapsed=788.40529 state='running'     
+                             steps=7 total_steps=44                             
+[11/10/26 20:57:41] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.78406 elapsed=793.010679 state='running'    
+                             steps=8 total_steps=45                             
+[11/10/26 20:57:52] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.79501 elapsed=804.873905 state='running'    
+                             steps=9 total_steps=46                             
+[11/10/26 20:57:55] INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.80164 elapsed=807.22737 state='running'     
+                             steps=10 total_steps=47                            
+                    INFO     'forge': progress update checkpoint='checkpoint_6' 
+                             cost=0.80164 elapsed=807.327938 state='evaluating' 
+                             steps=10 total_steps=47                            
+[11/10/26 21:00:07] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.80164 elapsed=939.15658 state='running'     
+                             steps=0 total_steps=47                             
+[11/10/26 21:00:11] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.81139 elapsed=943.262281 state='running'    
+                             steps=1 total_steps=48                             
+[11/10/26 21:00:12] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.83097 elapsed=944.614931 state='running'    
+                             steps=2 total_steps=49                             
+[11/10/26 21:00:25] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.85858 elapsed=957.230389 state='running'    
+                             steps=3 total_steps=50                             
+[11/10/26 21:00:43] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.87854 elapsed=975.099589 state='running'    
+                             steps=4 total_steps=51                             
+[11/10/26 21:00:51] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.92879 elapsed=983.209297 state='running'    
+                             steps=5 total_steps=52                             
+[11/10/26 21:01:05] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.94168 elapsed=997.57748 state='running'     
+                             steps=6 total_steps=53                             
+[11/10/26 21:01:14] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.95802 elapsed=1006.439301 state='running'   
+                             steps=7 total_steps=54                             
+[11/10/26 21:01:24] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.96988 elapsed=1016.050353 state='running'   
+                             steps=8 total_steps=55                             
+[11/10/26 21:01:26] INFO     'forge': progress update checkpoint='checkpoint_7' 
+                             cost=0.96885 elapsed=1018.153622 state='evaluating'
+                             steps=8 total_steps=55                             
+[11/10/26 21:03:54] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=0.96885 elapsed=1166.652385 state='running'   
+                             steps=0 total_steps=55                             
+[11/10/26 21:03:56] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=0.98026 elapsed=1168.755424 state='running'   
+                             steps=1 total_steps=56                             
+[11/10/26 21:03:57] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=0.99485 elapsed=1169.857674 state='running'   
+                             steps=2 total_steps=57                             
+[11/10/26 21:04:05] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.02533 elapsed=1177.469054 state='running'   
+                             steps=3 total_steps=58                             
+[11/10/26 21:04:07] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.03563 elapsed=1179.572059 state='running'   
+                             steps=4 total_steps=59                             
+[11/10/26 21:04:14] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.04416 elapsed=1186.179164 state='running'   
+                             steps=5 total_steps=60                             
+[11/10/26 21:04:27] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.05957 elapsed=1199.794603 state='running'   
+                             steps=6 total_steps=61                             
+[11/10/26 21:04:40] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.07458 elapsed=1212.658906 state='running'   
+                             steps=7 total_steps=62                             
+[11/10/26 21:04:50] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.0908 elapsed=1222.018791 state='running'    
+                             steps=8 total_steps=63                             
+[11/10/26 21:04:57] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.15599 elapsed=1229.126889 state='running'   
+                             steps=9 total_steps=64                             
+[11/10/26 21:05:16] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.16796 elapsed=1248.250862 state='running'   
+                             steps=10 total_steps=65                            
+[11/10/26 21:05:20] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.17491 elapsed=1252.356276 state='running'   
+                             steps=11 total_steps=66                            
+[11/10/26 21:05:30] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.18746 elapsed=1262.719826 state='running'   
+                             steps=12 total_steps=67                            
+[11/10/26 21:05:33] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.18815 elapsed=1265.823988 state='running'   
+                             steps=12 total_steps=67                            
+                    INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.18815 elapsed=1265.925342 state='evaluating'
+                             steps=12 total_steps=67                            
+[11/10/26 21:05:44] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.51502             
+                             elapsed=2594.259084 state='running' steps=30       
+                             total_steps=74                                     
+[11/10/26 21:05:55] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.51502             
+                             elapsed=2605.372309 state='running' steps=30       
+                             total_steps=74                                     
+[11/10/26 21:05:56] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.54007             
+                             elapsed=2606.724403 state='running' steps=31       
+                             total_steps=75                                     
+[11/10/26 21:06:00] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.56361             
+                             elapsed=2610.829317 state='running' steps=32       
+                             total_steps=76                                     
+[11/10/26 21:06:06] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.58864             
+                             elapsed=2615.935158 state='running' steps=33       
+                             total_steps=77                                     
+[11/10/26 21:06:09] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.58159             
+                             elapsed=2619.038871 state='running' steps=34       
+                             total_steps=78                                     
+[11/10/26 21:06:17] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.60869             
+                             elapsed=2626.897681 state='running' steps=35       
+                             total_steps=79                                     
+[11/10/26 21:06:19] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.63353             
+                             elapsed=2629.250894 state='running' steps=36       
+                             total_steps=80                                     
+[11/10/26 21:06:25] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.63219             
+                             elapsed=2634.857458 state='running' steps=37       
+                             total_steps=81                                     
+                    INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=2.63219             
+                             elapsed=2635.209663 state='evaluating' steps=37    
+                             total_steps=81                                     
+[11/10/26 21:08:38] INFO     'circuit_eval': progress update                    
+                             checkpoint='checkpoint_8' cost=4.06933             
+                             elapsed=2768.702435 state='completed' steps=37     
+                             total_steps=118                                    
+[11/10/26 21:08:41] INFO     'forge': progress update checkpoint='checkpoint_8' 
+                             cost=1.40745 elapsed=1453.827448 state='completed' 
+                             steps=12 total_steps=79                            
+[11/10/26 21:08:49] INFO     Agent runs completed failed=0 process_id=3431429   
+                             successful=3 thread_name='MainThread' total=3      
+
+All 3 problems completed successfully!
+[11/10/26 21:10:10] INFO     Updated checkpoint results                         
+                             path='outputs/vl/c-review-stripped/sonnet-5.5_mediu
+                             m/20261110T1535/checkpoint_results.jsonl'          
+                             report_count=101                                   
+
+                       Run Summary                       
+╭──────────────────────────────┬────────────────────────╮
+│ Metric                       │                  Value │
+├──────────────────────────────┼────────────────────────┤
+│ Problems ran                 │                     20 │
+│ Checkpoints                  │                    101 │
+│ Total cost                   │               $32.1973 │
+│ Mean cost / chkpt            │     $0.3188 +/- 0.3629 │
+│ Mean time / chkpt            │       170.7 +/- 261.8s │
+│ Mean input tokens / chkpt    │                  1,196 │
+│ Mean output tokens / chkpt   │                  4,080 │
+│ Mean steps / chkpt           │           11.9 +/- 9.9 │
+├──────────────────────────────┼────────────────────────┤
+│ % checkpoints solved         │                  11.9% │
+│ % checkpoints iso solved     │                  28.7% │
+│ % checkpoints core solved    │                  66.3% │
+│ % problems solved            │                   0.0% │
+│ % problems partial           │                  40.0% │
+│ Mean test pass rate          │                  0.874 │
+├──────────────────────────────┼────────────────────────┤
+│ Mean lint:loc                │                 0.0000 │
+│ Mean verbosity score         │      0.4613 +/- 0.2373 │
+│ Mean erosion score           │      0.8396 +/- 0.1378 │
+╰──────────────────────────────┴────────────────────────╯
+                    INFO     Saved run summary                                  
+                             path='outputs/vl/c-review-stripped/sonnet-5.5_mediu
+                             m/20261110T1535/result.json'                       

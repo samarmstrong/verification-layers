@@ -1,0 +1,7 @@
+a-plain                $   31.84
+a-plain-stripped       $   28.00
+b-conveyor             $   31.32
+c-review               $   46.65
+c-review-stripped      $   47.55
+d-tests                $   39.83
+total                  $  225.18

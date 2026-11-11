@@ -102,4 +102,50 @@ recovers none of that loss (E2 at or below 0). Post 2 reports whichever of these
 
 ## Deviations
 
-None yet.
+All dated 2026-11-10, written after seed 2 started.
+
+1. **Arms B and As did not start in the first launch.** At 15:51Z both died while building
+   the `slop-code:python3.12` Docker image, because another arm was building it at the
+   same moment (`AlreadyExists`). A, C, D and Cs ran. The driver finished its other steps
+   and then failed at the table, which needs B. This was not the $300 stop, so B and As
+   were rerun under the same stamp from 20:17Z (`VL_RUN_ARMS`, added in `8ed2d11`; arms
+   start 90 s apart). They are the same configs on the same problems, started about
+   4.7 hours later than the other arms.
+2. **Five (arm, problem) runs ended early on a reviewer parse error.** The in-loop reviewer
+   sometimes returns a finding without `evidence`, or a string where an object is
+   expected. `Reviewer.review` then raises, and the runner marks the problem `error` and
+   stops it. This hit C on `forge` (stopped at checkpoint 2 of 7) and `rejector`
+   (checkpoint 1 of 5), and Cs on `circuit_eval` (7 of 8), `eve_route_planner` (1 of 3)
+   and `forge` (7 of 8). Seed 1 had no such errors. The same bug stopped shadow review
+   partway through A (99 of 101) and D (37 of 101). The reviewer code was not changed.
+   The runner treats errored problems as unfinished, so the rerun in deviation 1 also
+   reruns these five problems from checkpoint 1 under the same stamp. Shadow review and
+   the judge pick up where they stopped.
+3. **The five errored runs' traces were lost.** At 20:13Z a relaunch went out by mistake
+   with the old driver, because the host checkout had not updated. It was stopped after
+   about 2 minutes, but the runner had already reset those five problem directories. The
+   as-run per-checkpoint rows (pass, tests, CLI cost) survive in
+   `results/seed-2/asrun-backup/`. The per-arm top-level logs from the first launch
+   (`<arm>.log`) were also overwritten. The per-problem `infer.log` and `run_agent.log`
+   files in each run directory survive. To keep the true spend under $300, the cap for
+   the rerun was lowered to $295, since the wiped runs' cost of about $4.70 no longer shows
+   in the re-priced total.
+4. **Sensitivity check (added, not preregistered):** H1 to H4 are also reported with C and
+   Cs as originally run (the five errored problems truncated where they stopped, pairs
+   dropping out under the rule above), next to the rerun version. The rerun version is
+   primary, because the runner reruns errored problems by design and the errors come
+   from the harness, not the agent.
+5. **Rerun flip rate (added, descriptive, not preregistered).** For A to D: the share of
+   (problem, checkpoint) units whose strict pass differs between seed 1 and seed 2, and
+   the share of problems whose strict solve differs, per arm and pooled, with a bootstrap
+   over problems (`scripts/vl_flips.py`). This is not the Harness Leaderboard's 23.4%.
+   Theirs is over their own task set with three attempts per configuration; ours is two
+   attempts on 20 multi-checkpoint SlopCodeBench problems, with the checkpoint as the
+   unit. No problem was strict-solved at every checkpoint in seed 1 (0 of 80), so the
+   problem-level rate is near its floor and carries little information.
+6. **Shadow review retries replies that do not parse.** The parse error in deviation 2
+   also stopped shadow review partway through, on almost every pass. From `9f7683e`,
+   `vl_shadow_review.py` retries a checkpoint up to three times and otherwise records it
+   as `error`, which the shadow rates exclude (the cross-family judge already does the
+   same). In seed 2, 3 replies needed a retry and none ended as an error. Shadow review
+   is not part of H1 to H4.

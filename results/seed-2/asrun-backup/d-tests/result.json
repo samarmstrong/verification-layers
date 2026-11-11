@@ -1,0 +1,172 @@
+{
+  "model": "sonnet-5.5",
+  "thinking": "medium",
+  "prompt": "vl-tests",
+  "agent_type": "claude_code",
+  "agent_version": "2.1.318",
+  "num_problems": 20,
+  "num_checkpoints": 101,
+  "expected_checkpoints": 101,
+  "costs": {
+    "checkpoint": {
+      "mean": 0.2900834594059406,
+      "stddev": 0.4441657802264657,
+      "min": 0.047018000000000004,
+      "max": 4.260641,
+      "median": 0.19829319999999998,
+      "count": 101
+    },
+    "problem": {
+      "mean": 1.46492147,
+      "stddev": 1.3890726611625752,
+      "min": 0.41752890000000004,
+      "max": 6.8548881999999995,
+      "median": 1.0557784,
+      "count": 20
+    },
+    "total": 29.2984294
+  },
+  "time": {
+    "checkpoint": {
+      "mean": 143.84417242574258,
+      "stddev": 197.83166940046175,
+      "min": 20.403972,
+      "max": 1687.674125,
+      "median": 82.537298,
+      "count": 101
+    },
+    "problem": {
+      "mean": 726.41307075,
+      "stddev": 652.7845230675991,
+      "min": 165.693025,
+      "max": 3071.3432549999998,
+      "median": 558.871196,
+      "count": 20
+    }
+  },
+  "tokens": {
+    "input": 311779,
+    "output": 1281739,
+    "cache_read": 32615346,
+    "cache_write": 3345193,
+    "reasoning": 0,
+    "problem": {
+      "input": 15588.95,
+      "output": 64086.95,
+      "cache_read": 1630767.3,
+      "cache_write": 167259.65,
+      "reasoning": 0.0
+    },
+    "checkpoint": {
+      "input": 3086.920792079208,
+      "output": 12690.485148514852,
+      "cache_read": 322924.21782178216,
+      "cache_write": 33120.72277227723,
+      "reasoning": 0.0
+    }
+  },
+  "steps": {
+    "checkpoint": {
+      "mean": 9.158415841584159,
+      "stddev": 14.330898557499685,
+      "min": 2.0,
+      "max": 147.0,
+      "median": 7.0,
+      "count": 101
+    },
+    "problem": {
+      "mean": 46.25,
+      "stddev": 34.21583966835428,
+      "min": 24.0,
+      "max": 183.0,
+      "median": 39.5,
+      "count": 20
+    }
+  },
+  "checkpoints_solved": 19,
+  "checkpoints_iso_solved": 36,
+  "checkpoints_core_solved": 76,
+  "problem_solved": 0.0,
+  "problem_partial": 8.0,
+  "pct_checkpoints_solved": 18.81188118811881,
+  "pct_checkpoints_iso_solved": 35.64356435643564,
+  "pct_problems_solved": 0.0,
+  "pct_problems_partial": 40.0,
+  "pct_checkpoints_core_solved": 75.24752475247524,
+  "pass_rates": {
+    "problem": {
+      "core": 0.9171924471727103,
+      "total": 0.9063497900061407,
+      "error": 0.7977612809303986,
+      "functionality": 0.8807592211294396,
+      "regression": 0.9260648342922163
+    },
+    "checkpoint": {
+      "core": 0.9375689882464244,
+      "total": 0.9194978864216902,
+      "error": 0.932621279863927,
+      "functionality": 0.8971659015073978,
+      "regression": 0.9358097521431787
+    }
+  },
+  "cc": {
+    "high_count": {
+      "mean": 9.099009900990099,
+      "stddev": 7.271182779293957,
+      "min": 0.0,
+      "max": 36.0,
+      "median": 7.0,
+      "count": 101
+    },
+    "high_mean": {
+      "mean": 19.948325260349357,
+      "stddev": 5.154056123577795,
+      "min": 0.0,
+      "max": 29.90909090909091,
+      "median": 19.4,
+      "count": 101
+    },
+    "max": {
+      "mean": 37.94059405940594,
+      "stddev": 18.21802502039023,
+      "min": 10.0,
+      "max": 99.0,
+      "median": 34.0,
+      "count": 101
+    }
+  },
+  "ratios": {
+    "rubric": {
+      "mean": null,
+      "stddev": null,
+      "min": null,
+      "max": null,
+      "median": null,
+      "count": 0
+    },
+    "lint": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "count": 101
+    }
+  },
+  "verbosity": {
+    "mean": 0.2549420699112441,
+    "stddev": 0.1107261724842167,
+    "min": 0.015384615384615385,
+    "max": 0.4721030042918455,
+    "median": 0.2823250296559905,
+    "count": 101
+  },
+  "erosion": {
+    "mean": 0.627890239469686,
+    "stddev": 0.15165499229717963,
+    "min": 0.0,
+    "max": 0.8312477154541404,
+    "median": 0.6733800117109439,
+    "count": 101
+  }
+}

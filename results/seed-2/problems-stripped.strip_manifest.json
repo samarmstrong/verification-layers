@@ -1,0 +1,1555 @@
+{
+  "catalog": {
+    "version": "v1.0",
+    "commit": "4d38d300059667d57e43c31969bc455f5c338b52"
+  },
+  "run_config": "configs/runs/vl-a-plain.yaml",
+  "problems": {
+    "cfgpipe": {
+      "words_before": 3914,
+      "words_after": 2770,
+      "fraction_removed": 0.2923,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 678,
+          "words_after": 484,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                83,
+                140
+              ],
+              "first": "## 8. Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 428,
+          "words_after": 312,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                62,
+                105
+              ],
+              "first": "## 7. Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 660,
+          "words_after": 431,
+          "removed": [
+            {
+              "rule": "R4",
+              "lines": [
+                19,
+                19
+              ],
+              "first": "Example: `{ \"timeout\": { \"type\": \"integer\" } }` has one parameter declaration."
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                69,
+                128
+              ],
+              "first": "## 6. Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 856,
+          "words_after": 625,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                48,
+                121
+              ],
+              "first": "## 6. Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 723,
+          "words_after": 517,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                78,
+                129
+              ],
+              "first": "## 4. Examples"
+            }
+          ]
+        },
+        "checkpoint_6": {
+          "words_before": 569,
+          "words_after": 401,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                62,
+                100
+              ],
+              "first": "## 5. Examples"
+            }
+          ]
+        }
+      }
+    },
+    "circuit_eval": {
+      "words_before": 6217,
+      "words_after": 5122,
+      "fraction_removed": 0.1761,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 868,
+          "words_after": 789,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                198,
+                234
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 126,
+          "words_after": 110,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                39,
+                45
+              ],
+              "first": "## Example"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 897,
+          "words_after": 762,
+          "removed": [
+            {
+              "rule": "R3",
+              "lines": [
+                36,
+                42
+              ],
+              "first": "Examples:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                169,
+                214
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 745,
+          "words_after": 502,
+          "removed": [
+            {
+              "rule": "R4",
+              "lines": [
+                107,
+                107
+              ],
+              "first": "Example: `MUX(X, 0b0101, 0b0111)` \u2192 `0b01X1`"
+            },
+            {
+              "rule": "R3",
+              "lines": [
+                113,
+                117
+              ],
+              "first": "Examples:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                145,
+                226
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 610,
+          "words_after": 472,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                136,
+                183
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_6": {
+          "words_before": 944,
+          "words_after": 736,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                200,
+                280
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_7": {
+          "words_before": 1062,
+          "words_after": 975,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                281,
+                325
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_8": {
+          "words_before": 965,
+          "words_after": 776,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                203,
+                274
+              ],
+              "first": "## Examples"
+            }
+          ]
+        }
+      }
+    },
+    "code_search": {
+      "words_before": 2284,
+      "words_after": 1716,
+      "fraction_removed": 0.2487,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 513,
+          "words_after": 386,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                79,
+                133
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 133,
+          "words_after": 96,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                28,
+                62
+              ],
+              "first": "## Example"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 487,
+          "words_after": 366,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                80,
+                170
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 715,
+          "words_after": 608,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                127,
+                199
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 436,
+          "words_after": 260,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                56,
+                159
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "dag_execution": {
+      "words_before": 2018,
+      "words_after": 1509,
+      "fraction_removed": 0.2522,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1170,
+          "words_after": 883,
+          "removed": [
+            {
+              "rule": "R3",
+              "lines": [
+                43,
+                48
+              ],
+              "first": "Example:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                177,
+                250
+              ],
+              "first": "# Example"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 634,
+          "words_after": 513,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                99,
+                144
+              ],
+              "first": "# Example"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 214,
+          "words_after": 113,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                11,
+                44
+              ],
+              "first": "# Example"
+            }
+          ]
+        }
+      }
+    },
+    "database_migration": {
+      "words_before": 6120,
+      "words_after": 4082,
+      "fraction_removed": 0.333,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1243,
+          "words_after": 903,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                174,
+                317
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 513,
+          "words_after": 327,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                71,
+                106
+              ],
+              "first": "## Example: Complete Column Migration"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                122,
+                182
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 1411,
+          "words_after": 954,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                187,
+                369
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1446,
+          "words_after": 923,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                142,
+                312
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 1507,
+          "words_after": 975,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                180,
+                351
+              ],
+              "first": "## Examples"
+            },
+            {
+              "rule": "R3",
+              "lines": [
+                393,
+                396
+              ],
+              "first": "Example: If version 5 depends on [3, 4], and we rollback to version 2:"
+            }
+          ]
+        }
+      }
+    },
+    "dynamic_buffer": {
+      "words_before": 6803,
+      "words_after": 5547,
+      "fraction_removed": 0.1846,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1474,
+          "words_after": 1373,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                308,
+                362
+              ],
+              "first": "# Example"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 1910,
+          "words_after": 1435,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                210,
+                358
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 1361,
+          "words_after": 1183,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                349,
+                425
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 2058,
+          "words_after": 1556,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                268,
+                415
+              ],
+              "first": "## Examples"
+            }
+          ]
+        }
+      }
+    },
+    "dynamic_config_service_api": {
+      "words_before": 6302,
+      "words_after": 5778,
+      "fraction_removed": 0.0831,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1345,
+          "words_after": 1283,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                306,
+                341
+              ],
+              "first": "## Minimal Example (illustrative only)"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 1271,
+          "words_after": 1137,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                260,
+                330
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 2066,
+          "words_after": 1907,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                303,
+                360
+              ],
+              "first": "## Example Flow"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1620,
+          "words_after": 1451,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                239,
+                271
+              ],
+              "first": "## Policy Example"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                299,
+                335
+              ],
+              "first": "## Example Flow"
+            }
+          ]
+        }
+      }
+    },
+    "eve_route_planner": {
+      "words_before": 2236,
+      "words_after": 1755,
+      "fraction_removed": 0.2151,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 890,
+          "words_after": 754,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                84,
+                85
+              ],
+              "first": "# Examples"
+            },
+            {
+              "rule": "R1-keep",
+              "lines": [
+                86,
+                99
+              ],
+              "first": "### Output Format"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                100,
+                126
+              ],
+              "first": "### Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 795,
+          "words_after": 450,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                79,
+                141
+              ],
+              "first": "### Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 551,
+          "words_after": 551,
+          "removed": []
+        }
+      }
+    },
+    "execution_server": {
+      "words_before": 3737,
+      "words_after": 1851,
+      "fraction_removed": 0.5047,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 542,
+          "words_after": 389,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                96,
+                198
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 377,
+          "words_after": 233,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                51,
+                135
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 223,
+          "words_after": 113,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                22,
+                88
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 873,
+          "words_after": 402,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                130,
+                369
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 785,
+          "words_after": 302,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                100,
+                384
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_6": {
+          "words_before": 937,
+          "words_after": 412,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                124,
+                429
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "file_backup": {
+      "words_before": 3009,
+      "words_after": 2022,
+      "fraction_removed": 0.328,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1052,
+          "words_after": 759,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                123,
+                227
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 787,
+          "words_after": 481,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                96,
+                199
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 639,
+          "words_after": 510,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                108,
+                159
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 531,
+          "words_after": 272,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                59,
+                143
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "file_merger": {
+      "words_before": 2754,
+      "words_after": 2496,
+      "fraction_removed": 0.0937,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 636,
+          "words_after": 587,
+          "removed": [
+            {
+              "rule": "R2",
+              "lines": [
+                109,
+                122
+              ],
+              "first": "**Examples**"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 680,
+          "words_after": 620,
+          "removed": [
+            {
+              "rule": "R2",
+              "lines": [
+                93,
+                113
+              ],
+              "first": "**Examples**"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 594,
+          "words_after": 513,
+          "removed": [
+            {
+              "rule": "R2",
+              "lines": [
+                83,
+                112
+              ],
+              "first": "**Examples**"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 844,
+          "words_after": 776,
+          "removed": [
+            {
+              "rule": "R4",
+              "lines": [
+                122,
+                122
+              ],
+              "first": "* Examples: `user.id`, `items.0.qty`, `attrs[\"country\"]`"
+            },
+            {
+              "rule": "R2",
+              "lines": [
+                139,
+                162
+              ],
+              "first": "**Examples**"
+            }
+          ]
+        }
+      }
+    },
+    "file_query_tool": {
+      "words_before": 3125,
+      "words_after": 1188,
+      "fraction_removed": 0.6198,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1080,
+          "words_after": 408,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                55,
+                209
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 315,
+          "words_after": 69,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                11,
+                91
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 287,
+          "words_after": 152,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                18,
+                46
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 752,
+          "words_after": 243,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                45,
+                154
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 691,
+          "words_after": 316,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                48,
+                267
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "forge": {
+      "words_before": 5171,
+      "words_after": 5171,
+      "fraction_removed": 0.0,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 838,
+          "words_after": 838,
+          "removed": []
+        },
+        "checkpoint_2": {
+          "words_before": 453,
+          "words_after": 453,
+          "removed": []
+        },
+        "checkpoint_3": {
+          "words_before": 532,
+          "words_after": 532,
+          "removed": []
+        },
+        "checkpoint_4": {
+          "words_before": 611,
+          "words_after": 611,
+          "removed": []
+        },
+        "checkpoint_5": {
+          "words_before": 311,
+          "words_after": 311,
+          "removed": []
+        },
+        "checkpoint_6": {
+          "words_before": 937,
+          "words_after": 937,
+          "removed": []
+        },
+        "checkpoint_7": {
+          "words_before": 597,
+          "words_after": 597,
+          "removed": []
+        },
+        "checkpoint_8": {
+          "words_before": 892,
+          "words_after": 892,
+          "removed": []
+        }
+      }
+    },
+    "log_query": {
+      "words_before": 4416,
+      "words_after": 2498,
+      "fraction_removed": 0.4343,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 830,
+          "words_after": 579,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                92,
+                209
+              ],
+              "first": "# Examples (inputs \u2192 outputs)"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 1008,
+          "words_after": 594,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                86,
+                266
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 1165,
+          "words_after": 657,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                95,
+                324
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 762,
+          "words_after": 237,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                45,
+                258
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 651,
+          "words_after": 431,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                89,
+                205
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "metric_transform_lang": {
+      "words_before": 6453,
+      "words_after": 6045,
+      "fraction_removed": 0.0632,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1103,
+          "words_after": 1103,
+          "removed": []
+        },
+        "checkpoint_2": {
+          "words_before": 1577,
+          "words_after": 1388,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                216,
+                224
+              ],
+              "first": "## Outputs (Examples at a High Level)"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                256,
+                294
+              ],
+              "first": "## Example (Illustrative Only)"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 969,
+          "words_after": 833,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                146,
+                195
+              ],
+              "first": "## Examples (high level)"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1396,
+          "words_after": 1396,
+          "removed": []
+        },
+        "checkpoint_5": {
+          "words_before": 1408,
+          "words_after": 1325,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                288,
+                312
+              ],
+              "first": "## Resumption Examples"
+            }
+          ]
+        }
+      }
+    },
+    "migrate_configs": {
+      "words_before": 6156,
+      "words_after": 3133,
+      "fraction_removed": 0.4911,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 965,
+          "words_after": 667,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                98,
+                282
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 713,
+          "words_after": 432,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                73,
+                244
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 1510,
+          "words_after": 587,
+          "removed": [
+            {
+              "rule": "R3",
+              "lines": [
+                19,
+                23
+              ],
+              "first": "Examples:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                142,
+                637
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1454,
+          "words_after": 700,
+          "removed": [
+            {
+              "rule": "R4",
+              "lines": [
+                103,
+                103
+              ],
+              "first": "- Example: If `base.yaml` moves to `common/base.yaml`, then any file with `extends: base.yaml` must "
+            },
+            {
+              "rule": "R4",
+              "lines": [
+                106,
+                106
+              ],
+              "first": "- Example: If `app.yaml` (with `extends: base.yaml`) moves to `deploy/app.yaml`, the reference must "
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                151,
+                580
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 1514,
+          "words_after": 747,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                190,
+                585
+              ],
+              "first": "## Examples"
+            }
+          ]
+        }
+      }
+    },
+    "rejector": {
+      "words_before": 5502,
+      "words_after": 4734,
+      "fraction_removed": 0.1396,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1170,
+          "words_after": 967,
+          "removed": [
+            {
+              "rule": "R3",
+              "lines": [
+                157,
+                162
+              ],
+              "first": "Example:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                256,
+                305
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 955,
+          "words_after": 809,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                218,
+                254
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 990,
+          "words_after": 859,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                191,
+                218
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1248,
+          "words_after": 1098,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                319,
+                352
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 1139,
+          "words_after": 1001,
+          "removed": [
+            {
+              "rule": "R3",
+              "lines": [
+                241,
+                259
+              ],
+              "first": "Example:"
+            },
+            {
+              "rule": "R1",
+              "lines": [
+                282,
+                307
+              ],
+              "first": "# Examples"
+            }
+          ]
+        }
+      }
+    },
+    "textdrop": {
+      "words_before": 4539,
+      "words_after": 4091,
+      "fraction_removed": 0.0987,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 626,
+          "words_after": 534,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                79,
+                111
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 620,
+          "words_after": 565,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                53,
+                73
+              ],
+              "first": "### Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 916,
+          "words_after": 777,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                66,
+                95
+              ],
+              "first": "### Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 706,
+          "words_after": 706,
+          "removed": []
+        },
+        "checkpoint_5": {
+          "words_before": 620,
+          "words_after": 545,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                36,
+                72
+              ],
+              "first": "### Examples"
+            }
+          ]
+        },
+        "checkpoint_6": {
+          "words_before": 1051,
+          "words_after": 964,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                132,
+                149
+              ],
+              "first": "### Examples"
+            }
+          ]
+        }
+      }
+    },
+    "trajectory_api": {
+      "words_before": 5968,
+      "words_after": 4567,
+      "fraction_removed": 0.2348,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 1503,
+          "words_after": 1119,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                279,
+                459
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_2": {
+          "words_before": 946,
+          "words_after": 715,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                162,
+                279
+              ],
+              "first": "# Examples"
+            }
+          ]
+        },
+        "checkpoint_3": {
+          "words_before": 868,
+          "words_after": 647,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                134,
+                249
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 1256,
+          "words_after": 977,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                189,
+                314
+              ],
+              "first": "## Examples"
+            }
+          ]
+        },
+        "checkpoint_5": {
+          "words_before": 1395,
+          "words_after": 1109,
+          "removed": [
+            {
+              "rule": "R1",
+              "lines": [
+                249,
+                365
+              ],
+              "first": "## Examples"
+            }
+          ]
+        }
+      }
+    },
+    "xjq": {
+      "words_before": 923,
+      "words_after": 910,
+      "fraction_removed": 0.0141,
+      "checkpoints": {
+        "checkpoint_1": {
+          "words_before": 151,
+          "words_after": 151,
+          "removed": []
+        },
+        "checkpoint_2": {
+          "words_before": 185,
+          "words_after": 185,
+          "removed": []
+        },
+        "checkpoint_3": {
+          "words_before": 189,
+          "words_after": 176,
+          "removed": [
+            {
+              "rule": "R4",
+              "lines": [
+                21,
+                21
+              ],
+              "first": "Examples: `1 -> \"1\"`, `1.0 -> \"1\"`, `1.50 -> \"1.5\"`, `0.00012 -> \"0.00012\"`."
+            }
+          ]
+        },
+        "checkpoint_4": {
+          "words_before": 145,
+          "words_after": 145,
+          "removed": []
+        },
+        "checkpoint_5": {
+          "words_before": 253,
+          "words_after": 253,
+          "removed": []
+        }
+      }
+    }
+  }
+}

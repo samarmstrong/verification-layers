@@ -1,0 +1,172 @@
+{
+  "model": "sonnet-5.5",
+  "thinking": "medium",
+  "prompt": "vl-conveyor",
+  "agent_type": "claude_code",
+  "agent_version": "2.1.318",
+  "num_problems": 20,
+  "num_checkpoints": 97,
+  "expected_checkpoints": 101,
+  "costs": {
+    "checkpoint": {
+      "mean": 0.3082457886597938,
+      "stddev": 0.3511249800925786,
+      "min": 0.0651718,
+      "max": 2.259234399999999,
+      "median": 0.18626130000000002,
+      "count": 97
+    },
+    "problem": {
+      "mean": 1.494992075,
+      "stddev": 1.1930893231014443,
+      "min": 0.1821573,
+      "max": 5.569478299999999,
+      "median": 1.0515704000000001,
+      "count": 20
+    },
+    "total": 29.8998415
+  },
+  "time": {
+    "checkpoint": {
+      "mean": 152.78040855670102,
+      "stddev": 218.79765206549823,
+      "min": 28.846818,
+      "max": 1345.029935,
+      "median": 87.911285,
+      "count": 97
+    },
+    "problem": {
+      "mean": 740.9849815,
+      "stddev": 704.0718875855424,
+      "min": 162.92997,
+      "max": 3231.446178,
+      "median": 483.58815500000003,
+      "count": 20
+    }
+  },
+  "tokens": {
+    "input": 114528,
+    "output": 402289,
+    "cache_read": 16496940,
+    "cache_write": 1133303,
+    "reasoning": 0,
+    "problem": {
+      "input": 5726.4,
+      "output": 20114.45,
+      "cache_read": 824847.0,
+      "cache_write": 56665.15,
+      "reasoning": 0.0
+    },
+    "checkpoint": {
+      "input": 1180.701030927835,
+      "output": 4147.309278350515,
+      "cache_read": 170071.54639175258,
+      "cache_write": 11683.536082474227,
+      "reasoning": 0.0
+    }
+  },
+  "steps": {
+    "checkpoint": {
+      "mean": 11.525773195876289,
+      "stddev": 9.700829843696743,
+      "min": 3.0,
+      "max": 67.0,
+      "median": 9.0,
+      "count": 97
+    },
+    "problem": {
+      "mean": 55.9,
+      "stddev": 30.080418530123023,
+      "min": 9.0,
+      "max": 147.0,
+      "median": 48.5,
+      "count": 20
+    }
+  },
+  "checkpoints_solved": 15,
+  "checkpoints_iso_solved": 29,
+  "checkpoints_core_solved": 64,
+  "problem_solved": 0.0,
+  "problem_partial": 8.0,
+  "pct_checkpoints_solved": 14.85148514851485,
+  "pct_checkpoints_iso_solved": 28.71287128712871,
+  "pct_problems_solved": 0.0,
+  "pct_problems_partial": 40.0,
+  "pct_checkpoints_core_solved": 63.366336633663366,
+  "pass_rates": {
+    "problem": {
+      "core": 0.7940952215818514,
+      "total": 0.8409617253330717,
+      "error": 0.7679352083102083,
+      "functionality": 0.8058547532649915,
+      "regression": 0.8404408383875095
+    },
+    "checkpoint": {
+      "core": 0.8523703164164894,
+      "total": 0.876975366258972,
+      "error": 0.9111944797842234,
+      "functionality": 0.8370130832202076,
+      "regression": 0.9038341144600278
+    }
+  },
+  "cc": {
+    "high_count": {
+      "mean": 7.546391752577319,
+      "stddev": 5.871932920251327,
+      "min": 0.0,
+      "max": 25.0,
+      "median": 6.0,
+      "count": 97
+    },
+    "high_mean": {
+      "mean": 25.770847853636546,
+      "stddev": 9.205765020698736,
+      "min": 0.0,
+      "max": 60.89473684210526,
+      "median": 24.0,
+      "count": 97
+    },
+    "max": {
+      "mean": 57.8041237113402,
+      "stddev": 62.367633027753556,
+      "min": 7.0,
+      "max": 566.0,
+      "median": 42.0,
+      "count": 97
+    }
+  },
+  "ratios": {
+    "rubric": {
+      "mean": null,
+      "stddev": null,
+      "min": null,
+      "max": null,
+      "median": null,
+      "count": 0
+    },
+    "lint": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "count": 97
+    }
+  },
+  "verbosity": {
+    "mean": 0.4759089583157897,
+    "stddev": 0.24770540523082593,
+    "min": 0.03076923076923077,
+    "max": 0.9230769230769231,
+    "median": 0.445,
+    "count": 97
+  },
+  "erosion": {
+    "mean": 0.828159836130497,
+    "stddev": 0.13737404588313168,
+    "min": 0.0,
+    "max": 0.9954196891285593,
+    "median": 0.8468254023981343,
+    "count": 97
+  }
+}

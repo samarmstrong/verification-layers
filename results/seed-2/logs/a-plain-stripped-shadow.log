@@ -1,0 +1,134 @@
+101 snapshots to review
+cfgpipe/checkpoint_1: approve ($0.013)
+cfgpipe/checkpoint_2: approve ($0.018)
+cfgpipe/checkpoint_4: reject ($0.030)
+cfgpipe/checkpoint_3: approve ($0.025)
+circuit_eval/checkpoint_1: approve ($0.022)
+cfgpipe/checkpoint_6: reject ($0.040)
+cfgpipe/checkpoint_5: approve ($0.042)
+circuit_eval/checkpoint_2: approve ($0.027)
+circuit_eval/checkpoint_3: approve ($0.039)
+circuit_eval/checkpoint_4: reject ($0.045)
+circuit_eval/checkpoint_7: reject ($0.074)
+circuit_eval/checkpoint_6: approve ($0.066)
+circuit_eval/checkpoint_5: approve ($0.058)
+circuit_eval/checkpoint_8: reject ($0.091)
+code_search/checkpoint_1: reject ($0.013)
+code_search/checkpoint_2: approve ($0.015)
+code_search/checkpoint_4: reject ($0.041)
+code_search/checkpoint_5: reject ($0.058)
+dag_execution/checkpoint_2: reject ($0.061)
+dag_execution/checkpoint_1: reject ($0.054)
+Traceback (most recent call last):
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 85, in <module>
+    main()
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 80, in main
+    total = sum(pool.map(run, jobs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_shadow_review.py", line 70, in run
+    result = reviewer.review(specs_through(problem, name), snapshot)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/.venv/lib/python3.12/site-packages/slop_code/agent_runner/review.py", line 310, in review
+    findings=[ReviewFinding(**f) for f in payload.get("findings", [])],
+              ^^^^^^^^^^^^^^^^^^
+TypeError: slop_code.agent_runner.review.ReviewFinding() argument after ** must be a mapping, not str
+81 snapshots to review
+dag_execution/checkpoint_3: reject ($0.057)
+code_search/checkpoint_3: reject ($0.024)
+database_migration/checkpoint_1: approve ($0.022)
+database_migration/checkpoint_2: reject ($0.028)
+dynamic_buffer/checkpoint_1: reject ($0.037)
+database_migration/checkpoint_3: reject ($0.046)
+database_migration/checkpoint_5: reject ($0.072)
+database_migration/checkpoint_4: approve ($0.062)
+dynamic_buffer/checkpoint_2: reject ($0.065)
+dynamic_buffer/checkpoint_4: reject ($0.104)
+dynamic_buffer/checkpoint_3: approve ($0.075)
+dynamic_config_service_api/checkpoint_2: reject ($0.045)
+dynamic_config_service_api/checkpoint_1: reject ($0.028)
+dynamic_config_service_api/checkpoint_4: reject ($0.088)
+dynamic_config_service_api/checkpoint_3: reject ($0.068)
+eve_route_planner/checkpoint_1: reply did not parse (attempt 1): TypeError
+eve_route_planner/checkpoint_2: reject ($0.028)
+eve_route_planner/checkpoint_3: reject ($0.036)
+execution_server/checkpoint_1: reject ($0.018)
+execution_server/checkpoint_3: reply did not parse (attempt 1): TypeError
+execution_server/checkpoint_2: approve ($0.019)
+eve_route_planner/checkpoint_1: reject ($0.020)
+execution_server/checkpoint_4: approve ($0.027)
+execution_server/checkpoint_3: reject ($0.023)
+execution_server/checkpoint_5: approve ($0.031)
+execution_server/checkpoint_6: reject ($0.037)
+file_backup/checkpoint_1: reject ($0.017)
+file_backup/checkpoint_2: reply did not parse (attempt 1): ValidationError
+file_backup/checkpoint_3: reject ($0.028)
+file_backup/checkpoint_4: reject ($0.033)
+file_merger/checkpoint_1: approve ($0.024)
+file_backup/checkpoint_2: reject ($0.023)
+file_merger/checkpoint_2: reject ($0.032)
+file_query_tool/checkpoint_1: reject ($0.022)
+file_merger/checkpoint_4: reject ($0.054)
+file_merger/checkpoint_3: approve ($0.042)
+file_query_tool/checkpoint_2: reject ($0.028)
+file_query_tool/checkpoint_3: reject ($0.030)
+file_query_tool/checkpoint_5: reject ($0.059)
+forge/checkpoint_1: reject ($0.016)
+file_query_tool/checkpoint_4: reject ($0.040)
+forge/checkpoint_2: reject ($0.021)
+forge/checkpoint_3: reject ($0.026)
+forge/checkpoint_5: reject ($0.036)
+forge/checkpoint_6: reject ($0.044)
+forge/checkpoint_7: reject ($0.050)
+forge/checkpoint_4: reject ($0.035)
+log_query/checkpoint_1: approve ($0.020)
+forge/checkpoint_8: reject ($0.061)
+log_query/checkpoint_2: approve ($0.031)
+log_query/checkpoint_3: approve ($0.042)
+log_query/checkpoint_5: approve ($0.053)
+log_query/checkpoint_4: approve ($0.048)
+metric_transform_lang/checkpoint_1: approve ($0.032)
+metric_transform_lang/checkpoint_4: reject ($0.084)
+metric_transform_lang/checkpoint_3: reject ($0.061)
+metric_transform_lang/checkpoint_2: approve ($0.058)
+migrate_configs/checkpoint_1: reject ($0.020)
+metric_transform_lang/checkpoint_5: reject ($0.095)
+migrate_configs/checkpoint_2: reject ($0.035)
+migrate_configs/checkpoint_4: reject ($0.043)
+migrate_configs/checkpoint_5: reject ($0.052)
+migrate_configs/checkpoint_3: approve ($0.040)
+rejector/checkpoint_1: reject ($0.025)
+rejector/checkpoint_2: approve ($0.040)
+rejector/checkpoint_4: reject ($0.062)
+rejector/checkpoint_3: approve ($0.049)
+rejector/checkpoint_5: reject ($0.078)
+textdrop/checkpoint_1: approve ($0.012)
+textdrop/checkpoint_2: approve ($0.022)
+textdrop/checkpoint_4: reject ($0.032)
+textdrop/checkpoint_5: reject ($0.038)
+textdrop/checkpoint_3: approve ($0.034)
+textdrop/checkpoint_6: reject ($0.047)
+trajectory_api/checkpoint_1: reject ($0.028)
+trajectory_api/checkpoint_2: reject ($0.039)
+trajectory_api/checkpoint_3: reject ($0.044)
+trajectory_api/checkpoint_4: reject ($0.061)
+trajectory_api/checkpoint_5: reject ($0.087)
+xjq/checkpoint_1: reject ($0.011)
+xjq/checkpoint_2: reject ($0.015)
+xjq/checkpoint_4: reject ($0.018)
+xjq/checkpoint_3: reject ($0.019)
+xjq/checkpoint_5: reject ($0.021)
+shadow review cost: $3.27

@@ -1,0 +1,18 @@
+arm b-conveyor exited non-zero; see outputs/vl/seed-20261110T1535-logs/b-conveyor.log
+arm a-plain-stripped exited non-zero; see outputs/vl/seed-20261110T1535-logs/a-plain-stripped.log
+Traceback (most recent call last):
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_table.py", line 414, in <module>
+    main()
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_table.py", line 396, in main
+    arms[name] = load_rows(
+                 ^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/verification-layers/scripts/vl_table.py", line 104, in load_rows
+    for line in results.read_text().splitlines():
+                ^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam_deeptempo_ai/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/vl/b-conveyor/sonnet-5.5_medium/20261110T1535/checkpoint_results.jsonl'

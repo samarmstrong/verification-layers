@@ -1,0 +1,172 @@
+{
+  "model": "sonnet-5.5",
+  "thinking": "medium",
+  "prompt": "vl-conveyor",
+  "agent_type": "claude_code",
+  "agent_version": "2.1.318",
+  "num_problems": 20,
+  "num_checkpoints": 91,
+  "expected_checkpoints": 101,
+  "costs": {
+    "checkpoint": {
+      "mean": 0.31994870769230765,
+      "stddev": 0.43218823212870744,
+      "min": 0.062334999999999995,
+      "max": 3.274245099999999,
+      "median": 0.1912874,
+      "count": 91
+    },
+    "problem": {
+      "mean": 1.45576662,
+      "stddev": 1.6542641228650201,
+      "min": 0.1503591,
+      "max": 7.999714299999998,
+      "median": 0.97299705,
+      "count": 20
+    },
+    "total": 29.1153324
+  },
+  "time": {
+    "checkpoint": {
+      "mean": 168.90543514285713,
+      "stddev": 311.5061402238427,
+      "min": 22.144208,
+      "max": 2450.650555,
+      "median": 84.309804,
+      "count": 91
+    },
+    "problem": {
+      "mean": 768.5197299,
+      "stddev": 1176.5625622148814,
+      "min": 62.981941,
+      "max": 5623.36072,
+      "median": 499.2768605,
+      "count": 20
+    }
+  },
+  "tokens": {
+    "input": 161085,
+    "output": 490972,
+    "cache_read": 18286006,
+    "cache_write": 1603444,
+    "reasoning": 0,
+    "problem": {
+      "input": 8054.25,
+      "output": 24548.6,
+      "cache_read": 914300.3,
+      "cache_write": 80172.2,
+      "reasoning": 0.0
+    },
+    "checkpoint": {
+      "input": 1770.1648351648353,
+      "output": 5395.2967032967035,
+      "cache_read": 200945.1208791209,
+      "cache_write": 17620.263736263736,
+      "reasoning": 0.0
+    }
+  },
+  "steps": {
+    "checkpoint": {
+      "mean": 10.978021978021978,
+      "stddev": 11.175347891157594,
+      "min": 3.0,
+      "max": 80.0,
+      "median": 8.0,
+      "count": 91
+    },
+    "problem": {
+      "mean": 49.95,
+      "stddev": 43.101440933294974,
+      "min": 5.0,
+      "max": 217.0,
+      "median": 42.5,
+      "count": 20
+    }
+  },
+  "checkpoints_solved": 15,
+  "checkpoints_iso_solved": 32,
+  "checkpoints_core_solved": 71,
+  "problem_solved": 0.0,
+  "problem_partial": 8.0,
+  "pct_checkpoints_solved": 14.85148514851485,
+  "pct_checkpoints_iso_solved": 31.683168316831683,
+  "pct_problems_solved": 0.0,
+  "pct_problems_partial": 40.0,
+  "pct_checkpoints_core_solved": 70.29702970297029,
+  "pass_rates": {
+    "problem": {
+      "core": 0.9038459031938134,
+      "total": 0.8952078461554237,
+      "error": 0.8036325734450734,
+      "functionality": 0.865767308726271,
+      "regression": 0.8642913061620351
+    },
+    "checkpoint": {
+      "core": 0.9190480498419463,
+      "total": 0.9038199574603418,
+      "error": 0.9389289505486689,
+      "functionality": 0.8758771181045153,
+      "regression": 0.9197514619005154
+    }
+  },
+  "cc": {
+    "high_count": {
+      "mean": 7.681318681318682,
+      "stddev": 6.70137485210497,
+      "min": 0.0,
+      "max": 32.0,
+      "median": 5.0,
+      "count": 91
+    },
+    "high_mean": {
+      "mean": 26.09757760364569,
+      "stddev": 10.90372903804796,
+      "min": 0.0,
+      "max": 72.11111111111111,
+      "median": 23.75,
+      "count": 91
+    },
+    "max": {
+      "mean": 61.81318681318681,
+      "stddev": 83.06288275061546,
+      "min": 7.0,
+      "max": 725.0,
+      "median": 43.0,
+      "count": 91
+    }
+  },
+  "ratios": {
+    "rubric": {
+      "mean": null,
+      "stddev": null,
+      "min": null,
+      "max": null,
+      "median": null,
+      "count": 0
+    },
+    "lint": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "count": 91
+    }
+  },
+  "verbosity": {
+    "mean": 0.44580470119142573,
+    "stddev": 0.20866694299472086,
+    "min": 0.062146892655367235,
+    "max": 0.9775132275132276,
+    "median": 0.41935483870967744,
+    "count": 91
+  },
+  "erosion": {
+    "mean": 0.8047129557919878,
+    "stddev": 0.15489556107817398,
+    "min": 0.0,
+    "max": 0.9905769525008915,
+    "median": 0.842694536761314,
+    "count": 91
+  }
+}

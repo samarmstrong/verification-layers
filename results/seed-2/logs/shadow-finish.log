@@ -1,0 +1,11 @@
+a-plain pass 1: 101/101
+b-conveyor pass 1: 86/101
+b-conveyor pass 2: 101/101
+c-review pass 1: 101/101
+d-tests pass 1: 84/101
+d-tests pass 2: 101/101
+a-plain-stripped pass 1: 20/101
+a-plain-stripped pass 2: 101/101
+c-review-stripped pass 1: 101/101
+total                  $  232.31
+TABLE_DONE
